@@ -1,0 +1,362 @@
+.map-content{
+    margin: 2em auto;
+
+    background-color: rgba(255, 255, 255, 0.800);
+    width: 95%;
+    border-radius: 8px 8px 0px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 2px solid #0bacee;
+
+}
+
+.map-content h1{
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.map-content p{
+    margin:1em 2em;
+    font-size: 1.1em;
+}
+
+.map-content b{
+    color: #0bacee;
+}
+
+#showmap-btn{
+    margin-bottom: 0.5em;
+    font-size: 3em;
+    transition: 0.5s;
+    color: #0bacee;
+    background-color: transparent;
+}
+
+#showmap-btn:hover, #showmap-btn:active{
+    font-size: 4em;
+    color: #0bacee;
+}
+
+.map-container {
+    margin-top: 2em;
+    width: 0%;
+    height: 0%;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+}
+
+.map-container img {
+    margin-top: 1em;
+    max-width: 100%;
+}
+
+.showMap{
+    height: 520px;
+    width: 100%;
+}
+
+
+
+//* buttons position
+#biguacu-btn, #floripa-btn, #palhoca-btn, #saoJose-btn,#hidePainel-btn
+{
+    position: absolute;
+    cursor: pointer;
+    animation: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: 0px;
+    transition: 0.5s;
+    z-index: 0;
+    font-size: 1em;
+}
+
+#biguacu-btn {
+    width: 53%;
+    height: 38%;
+    top: 0.2em;
+    left: 4.6em;
+    padding-right: 4em;
+
+}
+
+#biguacu-btn:hover, #biguacu-btn:focus {
+    color:gray;
+    background-image: url("../../assets/biguacu0.png");
+}
+
+#floripa-btn {
+    width: 54%;
+    height: 80%;
+    top: 3.1em;
+    right: -0.8em;
+    
+    padding-right: 6.5em;
+    padding-bottom: 1.8em;
+}
+
+#floripa-btn:hover, #floripa-btn:focus {
+    color:gray;
+    background-image: url("../../assets/floripa0.png");
+    
+}
+
+
+#palhoca-btn {
+    width: 40%;
+    height: 55%;
+    bottom: -0.4em;
+    left: 8.9em;
+
+    padding-top: 6em;
+    padding-right: 5em;
+    
+}
+
+#palhoca-btn:hover, #palhoca-btn:focus {
+    background-image: url("../../assets/palhoca0.png");
+    color: gray;
+}
+
+#saoJose-btn {
+    width: 32%;
+    height: 21%;
+    top: 11.7em;
+    left: 9em;
+    z-index: 1;
+
+    padding-right: 2em;
+
+}
+
+#saoJose-btn:hover, #saoJose-btn:focus {
+    background-image: url("../../assets/saojose0.png");
+    color: gray;
+}
+
+#hidePainel-btn{
+    width: 1.3em;
+
+    top: 0.2em;
+    right: 0.5em;
+    z-index: 9999;
+    opacity: 100%;
+    color: #0bacee;
+    font-size: 2.5em;
+}
+
+#hidePainel-btn:hover,#hidePainel-btn:focus{
+    font-size: 2.6em;
+}
+
+.vacination-position{
+    position: absolute;
+    bottom: 1em;
+    right: 0.9em;
+    align-items: center;
+}
+
+.warning-label{
+    font-size: 0.75em;
+    font-weight: bold;
+    color: gray;
+}
+
+#show-vacination-dates-btn {
+    background-color: #0bacee;
+    color: rgba(255,255,255, 0.8);
+
+    width: 31px;
+    border-radius: 15px;
+
+}
+
+#show-vacination-dates-btn:hover,
+#show-vacination-dates-btn:focus  {
+    border: 2px solid lightblue;
+}
+
+#hide-vacination-dates-btn{
+    color: darkgray;
+    font-size: 3em;
+    width: 150px;
+    transition: 0.5s;
+    background-color: transparent;
+}
+
+#hide-vacination-dates-btn:hover,
+#hide-vacination-dates-btn:focus  {
+    font-size: 3.1em;
+}
+
+
+.infosCard{
+    width: 0%;
+    height: 200px;
+    margin-left: -50em;
+    background-color: rgba(255, 255, 255, 0.90);
+    border: 5px solid lightgray;
+    position: absolute;
+    top: 3em;
+    overflow: hidden;
+    transition: 1s;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.infosCard-show{
+    display: block;
+    width: 95%;
+    margin: 0em;
+    z-index: 3;
+    text-align: left;
+    font-weight: bold;
+    color: gray;
+}
+
+.infosVacCard{
+    width: 0%;
+    position: fixed;
+    bottom: 12em;
+    right: 0.5em;
+    transition: 1s;
+    border-radius: 10px;
+    background-color: lightgrey;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.infosVacCard-show{
+    width: 95%;
+    border: 5px solid lightgray;
+}
+
+.rendercard-container h3{
+    color: #0bacee;
+    text-align: left;
+}
+
+.cardValues-box{
+    width: 70px;
+}
+
+.rendercard-row1, .rendercard-row2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+@media (min-width: 500px) {
+
+    .map-content {
+        width: 500px;
+    }
+
+    #showmap-btn{
+        margin-bottom: 0;
+    }
+
+    .map-container img {
+        max-width: 70%;
+    }
+
+    .infosVacCard{
+        position: fixed;
+        bottom: 7em;
+        left: 0.1em;
+        transition: 1s;
+        border-radius: 10px;
+        background-color: lightgrey;
+        z-index: 9999;
+        overflow: hidden;
+    }
+
+    .infosVacCard img{
+        max-width: 600px;
+        max-height: 520px;
+        margin: auto;
+    }
+
+    .infosVacCard button{
+        position: absolute;
+        bottom: 0.5em;
+    }
+
+    .infosVacCard-show{
+        width: 85%;
+        border: 3px solid darkgray;
+    }
+}
+
+@media (min-width: 500px) {
+
+    .infosVacCard{
+        position: fixed;
+        bottom: 4em;
+        left: 0.1em;
+        transition: 1s;
+        border-radius: 10px;
+        background-color: lightgrey;
+        z-index: 9999;
+        overflow: hidden;
+    }
+
+    .infosVacCard-show{
+        width: 65%;
+        border: 3px solid darkgray;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .map-content {
+        width: 356px;
+    }
+
+    #biguacu-btn {
+        top: 0.4em;
+        left: -0.3em;
+        padding-left: 4em;
+    }
+    
+    #floripa-btn {
+        width: 54%;
+        height: 80%;
+        top: 4em;
+        right: -0.5em;
+        padding-left: 2.87em;
+    }
+    
+    #palhoca-btn {
+        width: 40%;
+        height: 55%;
+        bottom: -0.9em;
+        left: 4em;
+        padding-left: 2em;
+    }
+    
+    #saoJose-btn {
+        width: 32%;
+        height: 21%;
+        z-index: 1;
+        left: 4.3em;
+        top: 12em;
+        padding-left: 1.5em;
+    }
+
+}

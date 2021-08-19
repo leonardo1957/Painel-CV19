@@ -1,0 +1,17 @@
+- observar os prototipos e fazer semelhantes
+- estruturar o componente antes de desenvolver
+- Utilizar tags html5
+- se basear nos protipos
+- Instalar super scss
+- fazer boas transitions
+- arquitetura do projeto
+
+-parte logica p/ preencher o componente
+useEffect vai puxar os dados da api e colocar em uma variavel
+dentro de uma variavel sera feito um tratamento para buscar apenas o solicitado entao realizado map buscando apenas o solicitado e preenchendo um array de 4 variaveis palhoça florianopolis, sj, biguaçu
+
+
+Falta adicionar o efeito de escurecer o mapa quando clicardo em uma
+cidade
+Botão de esconder informações, abraçar o conteudo dentro de um position relative
+e passar obotão para dentro

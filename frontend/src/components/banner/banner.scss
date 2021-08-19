@@ -1,0 +1,73 @@
+.banner-hero {
+    position: relative;
+    height: 25em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/ponte.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: 5px 8px 10px black;
+    z-index: 50;
+}
+
+.banner-text {
+    text-align: left;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px 8px 0 0;
+    padding: 1em;
+    border-bottom: 2px solid #0bacee;
+
+    left: 2em;
+    top: 3em;
+    position: absolute;
+}
+
+
+.banner-text h1 {
+    max-width: 6em;
+    font-size: 1.6em;
+    line-height: 1.1em;
+    margin-bottom: 0.5em;
+    margin-top: -0.4em;
+}
+
+.banner-text p {
+    font-weight: bold;
+}
+
+@media (min-width: 550px) {
+    .banner-hero {
+        height: 30em;
+    }
+
+    .banner-text {
+        max-width: 550px;
+        font-size: 1.7em;
+        left: 2em;
+        top: 4em;
+        position: absolute;
+    }
+}
+
+.health-icon-position {
+    position: absolute;
+    top: 0.2em;
+    right: 0.5em;
+    font-size: 3em;
+    color: rgba(11, 172, 238, 0.75);
+    z-index: 1;
+}
+
+@media (max-width: 550px) {
+    .banner-hero {
+    }
+
+    .banner-text {
+        max-width: 90%;
+        font-size: 1.1em;
+        left: 1em;
+        top: 10em;
+        position: absolute;
+    }
+}
